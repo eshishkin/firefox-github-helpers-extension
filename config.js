@@ -1,6 +1,7 @@
 var config = {
     "pr": {
-        "hideViewed": true,
-        "reorderFiles": false
+        "hideViewed": false,
+        "reorderFiles": true,
+        "disallowToSubmitReviewWithNotViewedChanges": true
     }
 }

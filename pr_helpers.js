@@ -42,7 +42,12 @@ function toggleSubmitButton() {
     button.style.display = unchecked != 0 ? "none" : null;
 }
 
-function main() {
+function main(config) {
+    if (!config || !config.pr) {
+        console.log("No settings found")
+        return;
+    }
+
     if (config.pr.hideViewed) {
         hideViewed()
         addOnClickHook(hideViewed)
@@ -55,7 +60,11 @@ function main() {
     if (config.pr.disallowToSubmitReviewWithNotViewedChanges) {
         toggleSubmitButton()
         addOnClickHook(toggleSubmitButton)
-    }   
+    }    
 }
 
-main()
+
+browser.storage.local.get()
+    .then(main)
+    .onError(e => console.log("Unable to load extension:" + e))
+

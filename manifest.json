@@ -3,18 +3,30 @@
   "name": "GitHub Helpers",
   "version": "0.0.1",
   "description": "A set of helper functions for working with GitHub",
+  "homepage_url": "https://github.com/eshishkin/firefox-github-helpers-extension",
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
 
   "applications": {
     "gecko": {
-      "id": "github-helpers-addon@example.com",
+      "id": "github-helpers-addon@mozilla.org",
       "strict_min_version": "45.0"
     }
+  },
+
+  "browser_action": {
+    "default_icon": "icons/extension_icon.png",
+    "default_title": "GitHub Helper",
+    "default_popup": "popup/settings_popup.html"
   },
 
   "content_scripts": [
     {
       "matches": ["https://github.com/*/pull/*/files*"],
-      "js": ["config.js", "pr_helpers.js"]
+      "js": ["pr_helpers.js"]
     }
   ]
 }

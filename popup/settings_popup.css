@@ -1,0 +1,44 @@
+html, body {
+    width: 350px;
+    height: auto;
+}
+  
+.option {
+    margin: 5px
+}
+
+.label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+.checkbox  {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.caption {
+    text-align: center;
+    font-size: x-large;
+}
+  
+.button {
+    margin: 3% auto;
+    padding: 4px;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    width: 100px;
+    border: 1px black solid;
+}
+  
+.button:hover {
+    background-color: #CFF2F2;
+}

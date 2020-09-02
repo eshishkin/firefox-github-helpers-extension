@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "matches": ["https://github.com/*/pull/*/files*"],
-      "js": ["gh_helpers.js"]
+      "js": ["config.js", "pr_helpers.js"]
     }
   ]
 }

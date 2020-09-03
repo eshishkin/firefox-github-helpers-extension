@@ -9,8 +9,8 @@
     "activeTab",
     "storage"
   ],
-
-  "applications": {
+  
+  "browser_specific_settings": {
     "gecko": {
       "id": "github-helpers-addon@eshishkin.org",
       "strict_min_version": "57.0"

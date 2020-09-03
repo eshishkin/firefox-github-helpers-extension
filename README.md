@@ -6,16 +6,8 @@ For example
 
 - Pull Requests
   - Moves viewed files at the ends of the page
-  - Hides "Submit" button if there is an unviewed file 
+  - Hides "Submit" button if there is an unviewed file
 
+## Licensing
 
-
-# Licensing
-
-All icons are taken from http://www.iconbeast.com
-
-```
-Author: Charlene
-Website: http://www.iconbeast.com
-Email: thebeast@iconbeast.com
-```
+All icons are taken from http://www.iconbeast.com (Author: Charlene, Email: thebeast@iconbeast.com)
